@@ -1,0 +1,45 @@
+name = Codename FF
+description = Installation profile for the fuel friend
+version = 7.x
+core = 7.x
+
+distribution_name = "Codename FF"
+
+theme = "bartik"
+
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+; Custom
+
+dependencies[] = ffr_base
+dependencies[] = ffr_customer
+dependencies[] = ffr_product
+;dependencies[] = ffr_provider
+
+; Development
+
+dependencies[] = devel
+
+
+; Fixes for strange stuff
+;dependencies[] = commerce_price

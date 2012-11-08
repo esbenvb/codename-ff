@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FFR Product feature.
+ */
+
+include_once 'ffr_product.features.inc';

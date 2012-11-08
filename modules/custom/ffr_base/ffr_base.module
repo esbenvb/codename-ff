@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FFR Base feature.
+ */
+
+include_once 'ffr_base.features.inc';

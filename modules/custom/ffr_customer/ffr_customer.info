@@ -1,0 +1,16 @@
+name = FFR Customer
+core = 7.x
+package = FFR
+dependencies[] = addressfield
+dependencies[] = commerce_customer
+dependencies[] = commerce_customer_ui
+dependencies[] = commerce_features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = strongarm
+features[commerce_customer_type][] = billing
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[field][] = commerce_customer_profile-billing-commerce_customer_address
+features[variable][] = commerce_customer_profile_billing_field

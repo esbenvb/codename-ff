@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the FFR Customer feature.
+ */
+
+include_once 'ffr_customer.features.inc';
