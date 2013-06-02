@@ -92,52 +92,6 @@ function ffr_product_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__fuel';
-  $strongarm->value = array(
-    'view_modes' => array(
-      'teaser' => array(
-        'custom_settings' => TRUE,
-      ),
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'rss' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '-5',
-        ),
-      ),
-      'display' => array(
-        'product:sku' => array(
-          'default' => array(
-            'weight' => '4',
-            'visible' => TRUE,
-          ),
-        ),
-        'product:title' => array(
-          'default' => array(
-            'weight' => '3',
-            'visible' => TRUE,
-          ),
-        ),
-        'product:commerce_price' => array(
-          'default' => array(
-            'weight' => '1',
-            'visible' => TRUE,
-          ),
-        ),
-      ),
-    ),
-  );
-  $export['field_bundle_settings_node__fuel'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__pump';
   $strongarm->value = array(
     'view_modes' => array(
@@ -150,6 +104,9 @@ function ffr_product_strongarm() {
       'rss' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -160,26 +117,38 @@ function ffr_product_strongarm() {
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '-10',
+            'weight' => '6',
             'visible' => FALSE,
           ),
         ),
         'product:title' => array(
           'default' => array(
-            'weight' => '-5',
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '0',
-            'visible' => TRUE,
+            'weight' => '3',
+            'visible' => FALSE,
           ),
         ),
         'product:field_station' => array(
           'default' => array(
-            'weight' => '36',
-            'visible' => TRUE,
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:status' => array(
+          'default' => array(
+            'weight' => '8',
+            'visible' => FALSE,
+          ),
+        ),
+        'product:field_fuel_type' => array(
+          'default' => array(
+            'weight' => '5',
+            'visible' => FALSE,
           ),
         ),
       ),
