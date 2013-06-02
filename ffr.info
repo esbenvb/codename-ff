@@ -23,7 +23,6 @@ dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = dblog
 dependencies[] = shortcut
-dependencies[] = toolbar
 dependencies[] = overlay
 dependencies[] = field_ui
 dependencies[] = file
@@ -34,7 +33,11 @@ dependencies[] = rdf
 dependencies[] = ffr_base
 dependencies[] = ffr_customer
 dependencies[] = ffr_product
-;dependencies[] = ffr_provider
+dependencies[] = ffr_purchase
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = rest_server
 
 ; Development
 
